@@ -1,0 +1,975 @@
+/* General Styles */
+body {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #005631;
+    height: 68px;
+    width: 70%;
+    margin: 45px auto;
+    border-radius: 20px;
+    padding: 0.5rem;
+    box-shadow: 0 0px 45px rgba(189, 189, 189, 0.531); 
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.3s;
+    padding-right: 40px;
+    padding-left: 22px;
+}
+
+.signin-button {
+    background-color: #ffffff;
+    color: #005631;
+    font-size: 14px;
+    margin-right: -6.5px;
+    padding: 10px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.signin-button:hover {
+    background-color: #005631;
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 350;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ADADAD;
+}
+
+/* Home Page Styles */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4.9rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.home-p {
+    font-size: 1.2rem;
+    color: #ADADAD;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #005631;
+    color: #fff;
+    font-size: 14px;
+    margin-right: -6.5px;
+    padding: 10px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.btn:hover {
+    background-color: #005631;
+}
+
+.image-left, .image-left-duplicate {
+    position: absolute;
+    left: 3%;
+    top: 45%;
+    transform: translateY(-50%) rotate(-10deg);
+    width: 350px;
+}
+
+.image-right, .image-right-duplicate {
+    position: absolute;
+    right: 3%;
+    top: 45%;
+    transform: translateY(-50%) rotate(10deg);
+    width: 350px;
+}
+
+.image-left-duplicate {
+    z-index: 1;
+    top: 70%;
+    left: 13%;
+    transform: translateY(-50%) rotate(13deg);
+}
+
+.image-right-duplicate {
+    z-index: 1;
+    top: 70%;
+    right: 13%;
+    transform: translateY(-50%) rotate(-13deg);
+}
+
+/* About Us Section Styles */
+#AboutUs {
+    height: 170vh;
+    padding: 200px 0;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-left: 17%;
+}
+
+.about-us {
+    font-size: 1.2rem;
+    width: 91%;
+    color: #9D9D9D;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+#Team {
+    margin-top: 100px;
+}
+
+#Team img {
+    width: 40px;
+    height: 40px;
+}
+
+#Team h3 {
+    font-size: 3rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0,5px;
+}
+
+.team-description {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    color: #9D9D9D;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Grid and Card Styles */
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 90px;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    top: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+    outline: none;
+}
+
+.card-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 95px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 92%;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+}
+
+.role {
+    font-size: 1rem;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+    color: #9D9D9D;
+}
+
+/* How It Works Section Styles */
+#HowItWorks {
+    height: 150vh;
+    padding-top: 140px;
+}
+
+#theme h3 {
+    font-size: 3rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0,5px;
+}
+
+.hit-description {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    color: #9D9D9D;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 100px 0;
+}
+
+.containerTM {
+    width: 50%;
+    padding: 40px 50px ;
+    position: relative;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+
+.tm-sub {
+    font-size: 1.5rem;
+    color: #005631;
+    margin-bottom: 20px;
+    font-weight: 600
+}
+
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.containerTM:nth-child(1) {
+    animation-delay: 0s;
+}
+.containerTM:nth-child(2) {
+    animation-delay: 3s;
+}
+.containerTM:nth-child(3) {
+    animation-delay: 5s;
+}
+
+.text-box {
+    padding: 25px 35px;
+    background: #F1F1F1;
+    position: relative;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.container-left {
+    left: 0;
+}
+
+.container-right {
+    left: 50%;
+}
+
+.containerTM img {
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    z-index: 10;
+}
+
+.container-right img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 90%;
+    background: #005631;
+    left: 50%;
+    top: 0;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 80%;
+    }
+}
+
+
+/* Categories Section Styles */
+
+
+#Categories {
+    height: 120vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FAQ Section Styles */
+#FAQ {
+    height: 130vh;
+    padding-top: 140px;
+}
+
+#faq h3 {
+    font-size: 3rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0,5px;
+}
+
+.faq-description {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    color: #9D9D9D;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 90px
+}
+
+.faq-card1 {
+    background-color: #005631;
+    color: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    text-align: left;
+    transform: rotate(-4deg);
+    backface-visibility: hidden;
+}
+
+.faq-card2 {
+    background-color: #ECD400;
+    color: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    text-align: left;
+    transform: rotate(4deg);
+    backface-visibility: hidden;
+}
+
+.faq-card3 {
+    background-color: #B22727;
+    color: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    text-align: left;
+    transform: rotate(-4deg);
+    backface-visibility: hidden;
+}
+
+.faq-card4 {
+    background-color: #3935A3;
+    color: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    text-align: left;
+    transform: rotate(4deg);
+    backface-visibility: hidden;
+}
+
+.faq-card h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+
+.faq-card p {
+    font-size: 1rem;
+    margin-bottom: 100px;
+    font-weight: 350; /* Make the font weight lighter */
+}
+
+.faq-card1 .btn {
+    background-color: #ffffff;
+    color: #005631;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.faq-card2 .btn {
+    background-color: #ffffff;
+    color: #ECD400;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.faq-card3 .btn {
+    background-color: #ffffff;
+    color: #B22727;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.faq-card4 .btn {
+    background-color: #ffffff;
+    color: #3935A3;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.faq-card1 .btn:hover {
+    background-color: #004d2a;
+    color: white;
+}
+.faq-card2 .btn:hover {
+    background-color: #ECD400;
+    color: white;
+}
+.faq-card3 .btn:hover {
+    background-color: #B22727;
+    color: white;
+}
+.faq-card4 .btn:hover {
+    background-color: #3935A3;
+    color: white;
+}
+
+/* Contact Us Section Styles */
+#ContactUs {
+    height: 100vh;
+    padding-top: 170px;
+}
+
+.contact-us-section {
+    padding: 50px 0;
+    width: 79%;
+    margin: 0 auto;
+}
+
+.contact-us-section h6 {
+    font-size: 3rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0,5px;
+}
+
+.contact-us {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    color: #9D9D9D;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 90px
+}
+
+.contact-us-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-us-section p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+}
+
+.contact-form .form-control {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+
+.contact-form .btn-primary {
+    background-color: #004d2a;
+    border: none;
+    width: 100%;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #004d2a;
+}
+
+@media (max-width: 768px) {
+    .contact-us-section {
+        padding: 30px 0;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #212529;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+    color: #212529;
+}
+
+@media (max-width: 1200px) {
+    .image-left,
+    .image-left-duplicate,
+    .image-right,
+    .image-right-duplicate {
+        display: none;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .signin-button {
+        font-size: 12px;
+        padding: 8px 30px;
+    }
+
+    .home-page {
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
+        width: 250px;
+    }
+
+    #AboutUs {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin-left: 10%;
+    }
+
+    .about-us {
+        font-size: 1rem;
+    }
+
+    #Team h3 {
+        font-size: 2.5rem;
+    }
+
+    .team-description {
+        font-size: 1rem;
+    }
+
+    .grid {
+        gap: 60px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .card-content {
+        height: 80px;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .role {
+        font-size: 0.9rem;
+    }
+
+    #HowItWorks h3 {
+        font-size: 2.5rem;
+    }
+
+    .hit-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .signin-button {
+        font-size: 10px;
+        padding: 6px 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        font-size: 10px;
+    }
+
+    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-left: 5%;
+    }
+
+    .about-us {
+        font-size: 0.9rem;
+    }
+
+    #Team h3 {
+        font-size: 2rem;
+    }
+
+    .team-description {
+        font-size: 0.9rem;
+    }
+
+    .grid {
+        gap: 40px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card-content {
+        height: 70px;
+        padding: 10px;
+        width: 85%;
+    }
+
+    .name {
+        font-size: 0.9rem;
+    }
+
+    .role {
+        font-size: 0.8rem;
+    }
+
+    #HowItWorks h3 {
+        font-size: 2rem;
+    }
+
+    .hit-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .signin-button {
+        font-size: 8px;
+        padding: 4px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .home-p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 4px 15px;
+        font-size: 8px;
+    }
+
+    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
+        width: 150px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+
+    .about-us {
+        font-size: 0.8rem;
+    }
+
+    #Team h3 {
+        font-size: 1.5rem;
+    }
+
+    .team-description {
+        font-size: 0.8rem;
+    }
+
+    .grid {
+        gap: 20px;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .card-content {
+        height: 60px;
+        padding: 8px;
+        width: 80%;
+    }
+
+    .name {
+        font-size: 0.8rem;
+    }
+
+    .role {
+        font-size: 0.7rem;
+    }
+
+    #HowItWorks h3 {
+        font-size: 1.5rem;
+    }
+
+    .hit-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        font-size: 12px;
+    }
+
+    .signin-button {
+        font-size: 6px;
+        padding: 3px 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-p {
+        font-size: 0.7rem;
+    }
+
+    .btn {
+        padding: 3px 10px;
+        font-size: 6px;
+    }
+
+    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
+        width: 120px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-left: 1%;
+    }
+
+    .about-us {
+        font-size: 0.7rem;
+    }
+
+    #Team h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-description {
+        font-size: 0.7rem;
+    }
+
+    .grid {
+        gap: 10px;
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .card-content {
+        height: 50px;
+        padding: 5px;
+        width: 75%;
+    }
+
+    .name {
+        font-size: 0.7rem;
+    }
+
+    .role {
+        font-size: 0.6rem;
+    }
+
+    #HowItWorks h3 {
+        font-size: 1.2rem;
+    }
+
+    .hit-description {
+        font-size: 0.7rem;
+    }
+}

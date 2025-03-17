@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="t2c-icon" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash2Cash</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#Home">Trash2Cash</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Trash2Cash</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#HowItWorks">How it Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#Categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#FAQ">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#ContactUs">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="login.html" class="signin-button">Sign In</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Home Page -->
+    <section id="Home" class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh; text-align: center; position: relative;">
+        <div class="container">
+            <h1>Turn Your<br>Trash into Cash</h1>
+            <p class="home-p">Turn your plastic waste into money easily! Recycle trash, earn rewards, and<br> contribute to a cleaner environment. Start now!</p>
+            <button class="btn">Get Started</button>
+        </div>
+
+        <!-- Gambar di sebelah kiri -->
+        <img src="images/red.png" alt="Left Image" class="image-left">
+
+        <!-- Duplikat gambar di sebelah kiri -->
+        <img src="images/green.png" alt="Left Image Duplicate" class="image-left-duplicate">
+
+        <!-- Gambar di sebelah kanan -->
+        <img src="images/yellow.png" alt="Right Image" class="image-right">
+
+        <!-- Duplikat gambar di sebelah kanan -->
+        <img src="images/blue.png" alt="Right Image Duplicate" class="image-right-duplicate">
+    </section>
+    <!-- End Home Page -->
+
+    <!-- About Us -->
+    <section id="AboutUs" class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Our mission</h2>
+            </div>
+            <div class="col-md-8">
+                <p class="about-us">
+                    Di Trash2Cash, misi kami adalah mengubah sampah plastik menjadi sumber daya berharga dengan bermitra bersama perusahaan-perusahaan terdaftar. Dengan menggunakan teknologi barcode, kami memungkinkan bisnis untuk mengonversi sampah menjadi uang, mendorong keberianjutan lingkungan. Kami berkolaborasi dengan perusahaan, seperti produsen air minum dalam kemasan, skincare, dan camilan, mendorong mereka untuk menaikkan harga sedikit, dengan sebagian penjualan mendukung pengelolaan sampah. Dengan memberikan insentif untuk pengumpulan sampah, kami bertujuan mengurangi polusi, mencegah banjir, dan mengatasi masalah sampah yang terus-menerus di Indonesia, sekaligus menciptakan peluang ekonomi bagi semua pihak yang terlibat.
+                </p>
+            </div>
+        </div>
+        <div id="Team" class="team text-center py-5">
+            <img src="images/icon2.png" alt="Recycle Icon" class="mb-4">
+            <h3>We are the people who<br>make up Trash2Cash</h3>
+            <p class="team-description">We are the team behind Trash2Cash, turning plastic waste into cash with barcode<br>tech, helping companies profit and reduce pollution.</p>
+        </div>
+        <div>
+            <div class="container">
+                <div class="grid">
+                    <!-- Card 1 -->
+                    <div class="card custom-card" style="background-image: url('images/farki.png');">
+                        <div class="card-content">
+                            <h3 class="name">Lalu Farki</h3>
+                            <p class="role">Front-End Developer</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card custom-card" style="background-image: url('images/hana.png');">
+                        <div class="card-content">
+                            <h3 class="name">Amira Hana</h3>
+                            <p class="role">Project Manager</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card custom-card" style="background-image: url('images/ruhan.png');">
+                        <div class="card-content">
+                            <h3 class="name">Ruhnehral Mikail</h3>
+                            <p class="role">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- How it works -->
+    <section id="HowItWorks">
+        <div id="theme" class="team text-center py-5">
+            <h3>How it Works</h3>
+            <p class="hit-description">Turn trash into cash in three simple steps: collect, scan, profit!</p>
+        </div>
+        <div class="timeline">
+            <div class="containerTM container-left">
+                <img src="images/roundTM.png">
+                <div class="text-box">
+                    <h4 class="tm-sub">Collect Plastic Waste</h4>
+                    <p class="timeline-desc">Kumpulkan sampah plastik dari berbagai sumber. Pastikan setiap item sampah memiliki barcode yang terpasang untuk memudahkan pelacakan dan verifikasi.</p>
+                </div>
+            </div>
+
+            <div class="containerTM container-right">
+                <img src="images/roundTM.png">
+                <div class="text-box">
+                    <h4 class="tm-sub">Scan & Submit</h4>
+                    <p class="timeline-desc">Gunakan aplikasi kami untuk memindai barcode pada setiap sampah plastik. Setelah dipindai, kirimkan sampah tersebut ke titik pengumpulan yang telah ditentukan.</p>
+                </div>
+            </div>
+
+            <div class="containerTM container-left">
+                <img src="images/roundTM.png">
+                <div class="text-box">
+                    <h4 class="tm-sub">Earn & Partner</h4>
+                    <p class="timeline-desc">Setelah sampah berhasil diverifikasi, pembayaran akan langsung diterima. Anda juga memiliki kesempatan untuk berkolaborasi dengan perusahaan terdaftar. Perusahaan dapat menaikkan harga produk mereka, dan Anda akan memperoleh bagian dari keuntungan yang dihasilkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End How it works -->
+
+    <!-- Categories -->
+    <section id="Categories">
+        <!-- Content for Categories section -->
+    </section>
+    <!-- End Categories -->
+
+    <!-- FAQ -->
+    <section id="FAQ">
+        <div id="faq" class="team text-center py-5">
+            <h3>Frequently Asked Question</h3>
+            <p class="faq-description">Find quick answers about Trash2Cash, from how it works to joining. Learn how<br>we turn plastic waste into cash and create value.</p>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="faq-card row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="faq-card1">
+                        <h4>Apa itu<br>Trash2Cash?</h4>
+                        <p>Platform untuk perusahaan terdaftar menjual sampah plastik bekas. Setiap plastik memiliki barcode yang bisa ditukar menjadi uang, mendukung daur ulang dan pelestarian lingkungan.</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#faqModal">See more</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="faq-card2">
+                        <h4>Dampak positif dari program ini</h4>
+                        <p>Program Trash2Cash memberikan dampak positif dengan mengurangi sampah plastik di lingkungan, mencegah banjir dan pencemaran, serta menciptakan ekonomi sirkular dengan mengubah sampah menjadi sumber daya bernilai.</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#faqModal">See more</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="faq-card3">
+                        <h4>Keuntungan bermitra dengan Trash2Cash</h4>
+                        <p>Bermitra dengan Trash2Cash memberi keuntungan finansial (25% dari penjualan) dan meningkatkan citra perusahaan sebagai peduli lingkungan, sambil mengurangi sampah dan pencemaran.</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#faqModal">See more</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="faq-card4">
+                        <h4>Perusahaan seperti apa yang cocok bermitra dengan Trash2Cash?</h4>
+                        <p>Perusahaan penjual air mineral, skincare, dan camilan sangat cocok untuk bermitra karena produk mereka sering menggunakan kemasan plastik.</p>
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#faqModal">See more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModalLabel">Trash2Cash Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Trash2Cash adalah platform yang memungkinkan perusahaan terdaftar untuk menjual sampah plastik bekas. Setiap plastik memiliki barcode yang bisa ditukar menjadi uang, mendukung daur ulang dan pelestarian lingkungan. Dengan menggunakan teknologi barcode, kami memungkinkan bisnis untuk mengonversi sampah menjadi uang, mendorong keberlanjutan lingkungan.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End FAQ -->
+
+    <!-- Contact US -->
+    <section id="ContactUs" class="contact-us-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Contact Us</h6>
+                    <p class="contact-us">Get 24/7 Support With Our Acclaimed Network Of<br>Sustainability And Financial Growth Experts. Let Us Help<br>You Turn Your Trash Into Cash!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <form action="https://formspree.io/f/xeoaorea" method="POST">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+                                </div>
+                                <div class="col">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Leave us a message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+</body>
+</html>
