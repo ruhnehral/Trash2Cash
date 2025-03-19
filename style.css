@@ -14,7 +14,7 @@ body {
     margin: 45px auto;
     border-radius: 20px;
     padding: 0.5rem;
-    box-shadow: 0 0px 45px rgba(189, 189, 189, 0.531); 
+    box-shadow: 0 0px 45px rgba(189, 189, 189, 0.531);
 }
 
 .navbar-brand {
@@ -22,15 +22,13 @@ body {
     font-size: 20px;
     color: #ffffff;
     transition: 0.3s;
-    padding-right: 40px;
-    padding-left: 22px;
+    padding: 0 22px 0 40px;
 }
 
 .signin-button {
     background-color: #ffffff;
     color: #005631;
     font-size: 14px;
-    margin-right: -6.5px;
     padding: 10px 40px;
     border-radius: 12px;
     text-decoration: none;
@@ -91,7 +89,6 @@ h1 {
     background-color: #005631;
     color: #fff;
     font-size: 14px;
-    margin-right: -6.5px;
     padding: 10px 40px;
     border-radius: 12px;
     text-decoration: none;
@@ -99,23 +96,24 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #005631;
+    background-color: #004d2a;
+}
+
+.image-left, .image-right, .image-left-duplicate, .image-right-duplicate {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 350px;
 }
 
 .image-left, .image-left-duplicate {
-    position: absolute;
     left: 3%;
-    top: 45%;
     transform: translateY(-50%) rotate(-10deg);
-    width: 350px;
 }
 
 .image-right, .image-right-duplicate {
-    position: absolute;
     right: 3%;
-    top: 45%;
     transform: translateY(-50%) rotate(10deg);
-    width: 350px;
 }
 
 .image-left-duplicate {
@@ -169,7 +167,7 @@ h2 {
     font-size: 3rem;
     font-weight: 630;
     color: #000;
-    letter-spacing: 0,5px;
+    letter-spacing: 0.5px;
 }
 
 .team-description {
@@ -262,7 +260,7 @@ h2 {
     font-size: 3rem;
     font-weight: 630;
     color: #000;
-    letter-spacing: 0,5px;
+    letter-spacing: 0.5px;
 }
 
 .hit-description {
@@ -282,20 +280,22 @@ h2 {
 
 .containerTM {
     width: 50%;
-    padding: 40px 50px ;
+    padding: 40px 50px;
     position: relative;
     animation: movedown 1s linear forwards;
     opacity: 0;
 }
 
-
 .tm-sub {
     font-size: 1.5rem;
     color: #005631;
     margin-bottom: 20px;
-    font-weight: 600
+    font-weight: 600;
 }
 
+.timeline-desc {
+    color: #9D9D9D;
+}
 
 @keyframes movedown {
     0% {
@@ -367,29 +367,70 @@ h2 {
     }
 }
 
-
-/* Categories Section Styles */
-
-
-#Categories {
-    height: 120vh;
+/* Application Section Styles */
+#Application {
+    height: 95vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 270px;
+    align-items: center;
+    padding: 1rem;
 }
 
+.wrapper {
+    padding-top: 150px;
+    display: flex;
+    gap: 6rem;
+    max-width: 1000px;
+    width: 40%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
 
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
 
+.slider {
+    min-width: calc(38% - .5rem);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+    user-select: none;
+}
 
+.slider img {
+    width: 125%;
+    height: 250%;
+    object-fit: cover;
+}
 
+.application {
+    margin-left: 270px;
+    padding-top: 200px;
+}
 
+.main-app {
+    font-size: 2.8rem;
+    font-weight: 630;
+    color: #000;
+    letter-spacing: 0.5px;
+}
 
-
-
-
-
-
-
-
-
-
+.app-desc {
+    padding-top: 20px;
+    font-size: 17px;
+    color: #9D9D9D;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 90px;
+    max-width: 80%;
+    text-align: justify;
+}
 
 /* FAQ Section Styles */
 #FAQ {
@@ -401,7 +442,7 @@ h2 {
     font-size: 3rem;
     font-weight: 630;
     color: #000;
-    letter-spacing: 0,5px;
+    letter-spacing: 0.5px;
 }
 
 .faq-description {
@@ -410,51 +451,39 @@ h2 {
     color: #9D9D9D;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    margin-bottom: 90px
+    margin-bottom: 90px;
+}
+
+.faq-card1, .faq-card2, .faq-card3, .faq-card4 {
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    text-align: left;
+    backface-visibility: hidden;
 }
 
 .faq-card1 {
     background-color: #005631;
     color: white;
-    border-radius: 25px;
-    padding: 30px;
-    width: 90%;
-    text-align: left;
     transform: rotate(-4deg);
-    backface-visibility: hidden;
 }
 
 .faq-card2 {
     background-color: #ECD400;
     color: white;
-    border-radius: 25px;
-    padding: 30px;
-    width: 90%;
-    text-align: left;
     transform: rotate(4deg);
-    backface-visibility: hidden;
 }
 
 .faq-card3 {
     background-color: #B22727;
     color: white;
-    border-radius: 25px;
-    padding: 30px;
-    width: 90%;
-    text-align: left;
     transform: rotate(-4deg);
-    backface-visibility: hidden;
 }
 
 .faq-card4 {
     background-color: #3935A3;
     color: white;
-    border-radius: 25px;
-    padding: 30px;
-    width: 90%;
-    text-align: left;
     transform: rotate(4deg);
-    backface-visibility: hidden;
 }
 
 .faq-card h4 {
@@ -466,56 +495,48 @@ h2 {
 .faq-card p {
     font-size: 1rem;
     margin-bottom: 100px;
-    font-weight: 350; /* Make the font weight lighter */
+    font-weight: 350;
+}
+
+.faq-card1 .btn, .faq-card2 .btn, .faq-card3 .btn, .faq-card4 .btn {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
 }
 
 .faq-card1 .btn {
-    background-color: #ffffff;
     color: #005631;
-    border-radius: 12px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s background-color;
 }
 
 .faq-card2 .btn {
-    background-color: #ffffff;
     color: #ECD400;
-    border-radius: 12px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s background-color;
 }
 
 .faq-card3 .btn {
-    background-color: #ffffff;
     color: #B22727;
-    border-radius: 12px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s background-color;
 }
 
 .faq-card4 .btn {
-    background-color: #ffffff;
     color: #3935A3;
-    border-radius: 12px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s background-color;
 }
+
 .faq-card1 .btn:hover {
     background-color: #004d2a;
     color: white;
 }
+
 .faq-card2 .btn:hover {
     background-color: #ECD400;
     color: white;
 }
+
 .faq-card3 .btn:hover {
     background-color: #B22727;
     color: white;
 }
+
 .faq-card4 .btn:hover {
     background-color: #3935A3;
     color: white;
@@ -537,7 +558,7 @@ h2 {
     font-size: 3rem;
     font-weight: 630;
     color: #000;
-    letter-spacing: 0,5px;
+    letter-spacing: 0.5px;
 }
 
 .contact-us {
@@ -546,106 +567,48 @@ h2 {
     color: #9D9D9D;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    margin-bottom: 90px
-}
-
-.contact-us-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-us-section p {
-    font-size: 1rem;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 }
 
 .contact-form {
-    background-color: #f8f9fa;
+    background-color: #F1F1F1;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
 }
 
 .contact-form h3 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    font-weight: 600;
 }
 
 .contact-form .form-label {
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .contact-form .form-control {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .contact-form .btn-primary {
     background-color: #004d2a;
     border: none;
     width: 100%;
+    height: 43px;
+    margin-top: 20px;
 }
 
 .contact-form .btn-primary:hover {
     background-color: #004d2a;
 }
 
-@media (max-width: 768px) {
-    .contact-us-section {
-        padding: 30px 0;
-    }
-
-    .contact-form {
-        padding: 20px;
-    }
-}
-
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .faq-card {
-        margin-bottom: 20px;
-    }
-}
-
-/* Modal Styles */
-.modal-content {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
-.modal-header {
-    border-bottom: none;
-}
-
-.modal-footer {
-    border-top: none;
-}
-
-.btn-close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-}
-
-.btn-light {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    color: #212529;
-}
-
-.btn-light:hover {
-    background-color: #e2e6ea;
-    color: #212529;
-}
-
 @media (max-width: 1200px) {
-    .image-left,
-    .image-left-duplicate,
-    .image-right,
-    .image-right-duplicate {
+    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
         display: none;
     }
 
@@ -678,10 +641,6 @@ h2 {
     .btn {
         padding: 8px 30px;
         font-size: 12px;
-    }
-
-    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
-        width: 250px;
     }
 
     #AboutUs {
@@ -764,10 +723,6 @@ h2 {
         font-size: 10px;
     }
 
-    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
-        width: 200px;
-    }
-
     h2 {
         font-size: 1.8rem;
         margin-left: 5%;
@@ -817,10 +772,6 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        width: 100%;
-    }
-
     .navbar-brand {
         font-size: 14px;
     }
@@ -835,95 +786,12 @@ h2 {
     }
 
     .home-p {
-        font-size: 0.8rem;
-    }
-
-    .btn {
-        padding: 4px 15px;
-        font-size: 8px;
-    }
-
-    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
-        width: 150px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-left: 2%;
-    }
-
-    .about-us {
-        font-size: 0.8rem;
-    }
-
-    #Team h3 {
-        font-size: 1.5rem;
-    }
-
-    .team-description {
-        font-size: 0.8rem;
-    }
-
-    .grid {
-        gap: 20px;
-    }
-
-    .card {
-        height: 250px;
-    }
-
-    .card-content {
-        height: 60px;
-        padding: 8px;
-        width: 80%;
-    }
-
-    .name {
-        font-size: 0.8rem;
-    }
-
-    .role {
-        font-size: 0.7rem;
-    }
-
-    #HowItWorks h3 {
-        font-size: 1.5rem;
-    }
-
-    .hit-description {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .navbar {
-        width: 100%;
-    }
-
-    .navbar-brand {
-        font-size: 12px;
-    }
-
-    .signin-button {
-        font-size: 6px;
-        padding: 3px 10px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .home-p {
         font-size: 0.7rem;
     }
 
     .btn {
         padding: 3px 10px;
         font-size: 6px;
-    }
-
-    .image-left, .image-left-duplicate, .image-right, .image-right-duplicate {
-        width: 120px;
     }
 
     h2 {
